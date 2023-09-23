@@ -67,6 +67,7 @@ function findName(value, nameList) {
 }
 
 function addPictures () {
+  console.log('hello');
   const coll = document.getElementsByTagName('blockquote');
   for (let block of coll) {
     if (block.firstElementChild.nodeName === 'B') {
@@ -183,4 +184,4 @@ addPictures();
 addMaterialIcons();
 addSceneIcons();
 createChoices();
-addFootnotes();
+// addFootnotes();
