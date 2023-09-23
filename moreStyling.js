@@ -188,7 +188,7 @@ function testTumblr () {
     if (item.textContent === 'Beginning') {
       console.log('yayyy');
       let newDiv = document.createElement('div');
-      wrap(item, div);
+      wrap(item, newDiv);
     }
   }
   console.log('lol');
