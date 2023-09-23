@@ -180,8 +180,23 @@ function addFootnotes () {
   }
 }
 
+function testTumblr () {
+  let elements = document.getElementsByTagName('h2');
+  console.log('heiiihihih');
+  for (let item of elements) {
+    console.log('hhhhhh', item)
+    if (item.textContent === 'Beginning') {
+      console.log('yayyy');
+      let newDiv = document.createElement('div');
+      wrap(item, div);
+    }
+  }
+  console.log('lol');
+}
+
 addPictures();
 addMaterialIcons();
 addSceneIcons();
 createChoices();
 // addFootnotes();
+testTumblr();
